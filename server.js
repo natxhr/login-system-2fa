@@ -40,7 +40,7 @@ connection.connect((err) => {
     }
 });
 
-// 2FA Setup (if needed)
+// 2FA Setup 
 setup2FA();
 
 // Register endpoint
