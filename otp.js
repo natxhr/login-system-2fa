@@ -69,7 +69,7 @@ async function sendOTPViaEmail(email, otp) {
 
 // Function to verify OTP
 function verifyOTP(email, otp) {
-    const secret = getSecret(email); // Implement or replace with your logic
+    const secret = getSecret(email); 
     return speakeasy.totp.verify({
         secret,
         encoding: 'base32',
