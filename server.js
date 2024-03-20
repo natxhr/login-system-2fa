@@ -14,13 +14,13 @@ const port = 3000;
 const limiterSignup = rateLimit({
     windowMS: 15 * 60 * 1000,
     max: 10,
-    message: 'Too many signups from this IP, please try again after some time.'
+    message: 'Too many signups from this IP, please try again after sometime.'
 });
 
 const limiterSignin = rateLimit({
     windowMS: 15 * 60 * 1000,
     max: 10,
-    message: 'Too many login attempts from this IP, please try again after some time.'
+    message: 'Too many login attempts from this IP, please try again after sometime.'
 });
 
 // Helmet Middleware
